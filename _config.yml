@@ -6,20 +6,17 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "数学, 华杯赛, 奥数，数学竞赛"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: 
 
 # Specify the date when the site was setup
 #since: 2015
 
-# Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
-# See: https://support.google.com/webmasters/answer/139066
-# Tips: Before you open this tag, remeber set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
-canonical: true
+
 
 
 # ---------------------------------------------------------------
@@ -29,11 +26,11 @@ canonical: true
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
+  categories: /categories
   #about: /about
   archives: /archives
   tags: /tags
-  #commonweal: /404.html
+  commonweal: /404.html
 
 
 # Enable/Disable menu icons.
@@ -59,9 +56,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -105,7 +102,7 @@ font:
     size:
 
   # Font settings for <code> and code blocks.
-  codes:
+  code:
     external: true
     family:
 
@@ -122,7 +119,9 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
   #LinkLabel: Link
-
+social:
+  #GitHub: https://github.com/ganyuanda
+  #BaiDu: http://www.baidu.com/p/%E7%94%98%E6%BA%90%E8%BE%BE
 
 # Social Links Icons
 # Icon Mapping:
@@ -134,14 +133,14 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  BaiDu: paw
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /images/avatar.png
+#avatar: /uploads/avatar.png
 
 
 # Table Of Contents in the Sidebar
@@ -156,13 +155,13 @@ toc:
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 #creative_commons: by-nc-sa
-#creative_commons:
+#creative_commons:l
 
 
 sidebar:
   # Sidebar Position, available value: left | right
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
@@ -192,9 +191,10 @@ sidebar:
 # Options:
 #   enabled: [true/false] - Replace with specific image
 #   image: url-of-image   - Images's url
+# tedd changed from false to true, but not working
 custom_logo:
   enabled: false
-  image:
+  image: 
 
 
 # Code Highlight theme
@@ -228,17 +228,17 @@ auto_excerpt:
 # Third Party Services Settings
 # ---------------------------------------------------------------
 
-# MathJax Support
+# MathJax Support //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 mathjax:
-  enable: false
-  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  enable: true
+  cdn: //cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
 # Swiftype Search API Key
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: be11db1b45f6cdf6f6824ed1c8360c4f
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -256,8 +256,6 @@ mathjax:
 #jiathis:
 #add_this_id:
 
-# Share
-#duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -281,6 +279,15 @@ duoshuo_info:
   #admin_nickname: Author
 
 
+# 多说热评文章 true 或者 false
+# duoshuo_hotartical: true
+
+
+# Share
+duoshuo_share: flase
+
+
+
 # Facebook SDK Support.
 # https://github.com/iissnan/hexo-theme-next/pull/410
 facebook_sdk:
@@ -289,13 +296,6 @@ facebook_sdk:
   fb_admin:     #<user_id>
   like_button:  #true
   webmaster:    #true
-
-# Facebook comments plugin
-# This plugin depends on Facebook SDK.
-# If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
-facebook_comments_plugin:
-  enable: false
-  num_of_posts: 10
 
 
 # Show number of visitors to each article.
@@ -337,7 +337,7 @@ baidu_push: false
 #! ---------------------------------------------------------------
 
 # Motion
-use_motion: true
+use_motion: false
 
 # Fancybox
 fancybox: true
@@ -356,39 +356,39 @@ vendors:
   jquery:
 
   # Internal version: 2.1.5
-  # http://fancyapps.com/fancybox/
   fancybox:
-  fancybox_css:
 
   # Internal version: 1.0.6
-  # https://github.com/ftlabs/fastclick
   fastclick:
 
   # Internal version: 1.9.7
-  # https://github.com/tuupola/jquery_lazyload
   lazyload:
 
   # Internal version: 1.2.1
-  # http://VelocityJS.org
   velocity:
 
   # Internal version: 1.2.1
-  # http://VelocityJS.org
   velocity_ui:
 
   # Internal version: 0.7.9
-  # https://faisalman.github.io/ua-parser-js/
   ua_parser:
-
-  # Internal version: 4.4.0
-  # http://fontawesome.io/
-  fontawesome:
 
 
 # Assets
 css: css
 js: js
 images: images
+
+#reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+#wechatpay: /path/to/wechat-reward-image
+#alipay: /path/to/alipay-reward-image
+
+#links_title: Links
+#links:
+#  MacTalk: http://macshuo.com/
+#  Title: http://example.com/
+
+since: 2016
 
 # Theme version
 version: 5.0.1
