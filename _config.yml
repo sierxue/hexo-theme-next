@@ -280,7 +280,7 @@ duoshuo_info:
 
 
 # 多说热评文章 true 或者 false
-# duoshuo_hotartical: true
+duoshuo_hotartical: true
 
 
 # Facebook SDK Support.
