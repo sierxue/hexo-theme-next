@@ -1,0 +1,2 @@
+git add . && git commit -m 'backup submodule of hexo on dulew4 virtual machine'
+git push --set-upstream origin master
