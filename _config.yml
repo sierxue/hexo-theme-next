@@ -155,7 +155,7 @@ toc:
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 #creative_commons: by-nc-sa
-#creative_commons:l
+creative_commons: by-nc-sa
 
 
 sidebar:
@@ -283,17 +283,6 @@ duoshuo_info:
 duoshuo_hotartical: true
 
 
-# Facebook SDK Support.
-# https://github.com/iissnan/hexo-theme-next/pull/410
-facebook_sdk:
-  enable: false
-  app_id:       #<app_id>
-  fb_admin:     #<user_id>
-  like_button:  #true
-  webmaster:    #true
-
-<<<<<<< HEAD
-=======
 # Facebook comments plugin
 # This plugin depends on Facebook SDK.
 # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
@@ -302,8 +291,6 @@ facebook_comments_plugin:
   num_of_posts: 10  # min posts num is 1
   width: 100%       # default width is 550px
   scheme: light     # default scheme is light (light or dark)
-
->>>>>>> upstream/master
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
