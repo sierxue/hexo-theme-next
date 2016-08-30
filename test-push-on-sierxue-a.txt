@@ -1,0 +1,1 @@
+git add . && git commit -m 'test themes\submodule of "media/sf_vm/repo/sierxue" on sierxue virtual machine'
